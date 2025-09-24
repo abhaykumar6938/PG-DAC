@@ -1,0 +1,33 @@
+.parent{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+.child{
+    border: 2px solid rebeccapurple;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    align-content: center;
+}
+.head{
+    background-color:rgb(245, 220, 222);
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+}
+.hdiv{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    align-content: center;
+    /* margin-right: 10px; */
+    margin-left: 30px;
+}
+#logo{
+    /* position: relative; */
+    margin: 5px;
+}

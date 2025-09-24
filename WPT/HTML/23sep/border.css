@@ -1,0 +1,10 @@
+.c1{
+    /* border: 2px solid black; */
+    width: 20%;
+    display: inline-flex;
+}
+.c1 img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
