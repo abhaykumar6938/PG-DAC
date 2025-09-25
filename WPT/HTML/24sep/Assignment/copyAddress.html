@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Copy</title>
+    <style>
+        .main{
+            background-color: aqua;
+            margin: auto;
+            height: 400px;
+            width: 90%;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: block;
+            margin: auto;
+        }
+        .box input{
+            border-radius: 10px;
+            height: 250px;
+            width: 300px;
+        }
+        button{
+            border-radius: 10px;
+            background-color: burlywood;
+            width: 200px;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <label for="per">Permanent Address</label>
+            <br>
+            <input type="text" name="address" id="per">
+        </div>
+        <button type="button" onclick="copyAddress()">Same As Permanent</button>
+        <div class="box">
+            <label for="temp">Temporary Address</label>
+            <br>
+            <input type="text" name="address" id="temp">
+        </div>
+    </div>
+
+    <script>
+        function copyAddress(){
+            let a=document.getElementById("per").value;
+            document.getElementById("temp").value=a;
+        }
+    </script>
+</body>
+</html>

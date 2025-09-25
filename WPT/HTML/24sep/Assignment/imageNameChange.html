@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Image</title>
+    <style>
+        .main {
+            margin: auto;
+            width: 60%;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .im img {
+            height: 200px;
+            width: 90%;
+            margin: 20px;
+
+        }
+
+        .but {
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 5px;
+        }
+
+        .but button {
+            border-radius: 5px;
+            background-color: antiquewhite;
+            height: 40px;
+            width: 100px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="im">
+            <img src= "../../../assets/image/vadapav.jpg" alt="image" id="imag">
+        </div>
+        <h3 id="title"></h3>
+        <div class="but">
+            <button type="button" onclick="changeImage()">Change Image</button>
+        </div>
+    </div>
+
+    <script>
+        const counter = 0;
+        const images = [{ src: "../../../assets/image/vadapav.jpg", text: "Vadapav" },
+        { src: "../../../assets/image/samosa.jpg", text: "Samosa" },
+        { src: "../../../assets/image/kachori.jpg", text: "Kachori" }];
+        
+        let curindex=0;
+        function changeImage(){
+            if(curindex>2){
+                curindex=0;
+            }
+            document.getElementById("imag").src=images[curindex].src;
+            document.getElementById("title").innerHTML=images[curindex].text;
+            curindex++;
+            
+        }
+
+    </script>
+</body>
+
+</html>

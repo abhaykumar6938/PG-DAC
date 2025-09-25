@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main{
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+        .num3{
+            display: flex;
+        }
+        .num{
+            margin: 10px;
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+        .num:hover{
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        #in{
+            border: 1px solid black;
+            height: 50px;
+            width: 270px;
+            margin-bottom: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+    <div class="main">
+        <!-- <div id="in"></div> -->
+        <input type="text" id="in" value="" pattern="[0-9+\-*/.]*">
+        <div class="num3">
+            <button type="button" onclick="addToInput(this.value)" class="num" value="7">7</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="8">8</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="9">9</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="*">x</button>
+        </div>
+    
+        <div class="num3">
+            <button type="button" onclick="addToInput(this.value)" class="num" value="4">4</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="5">5</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="6">6</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="-">-</button>
+        </div>
+
+        <div class="num3">
+            <button type="button" onclick="addToInput(this.value)" class="num" value="1">1</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="2">2</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="3">3</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="+">+</button>
+        </div>
+
+        <div class="num3">
+            <button type="button" onclick="addToInput(this.value)" class="num" value=".">.</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="0">0</button>
+            <button type="button" onclick="addToInput(this.value)" class="num" value="/">/</button>
+            <button type="button" onclick="clearInput()" class="num">C</button>
+            
+        </div>
+        <button type="button" onclick="calculateResult()" class="num" value="=">=</button>
+    </div>
+
+
+
+    <script>
+        
+        function addToInput(value) {
+            document.getElementById("in").value += value;
+        }
+        function calculateResult() {
+            try {
+                const input = document.getElementById("in").value;
+                const result = eval(input);
+                document.getElementById("in").value = result;
+            } catch (error) {
+                document.getElementById("in").value = "Error";
+            }
+        }
+        function clearInput() {
+            document.getElementById("in").value = "";
+        }
+    </script>
+
+</body>
+
+</html>

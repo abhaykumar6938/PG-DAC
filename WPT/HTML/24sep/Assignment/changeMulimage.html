@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Image</title>
+    <style>
+        .main{
+            margin: auto;
+            width: 60%;
+            height: 350px;
+            border: 2px solid black;
+        }
+        .im img{
+            height: 200px;
+            width: 90%;
+            margin: 20px;
+
+        }
+        .but{
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 5px;
+        }
+        .but button{
+             border-radius: 5px;
+             background-color: antiquewhite;
+             height: 40px;
+             width: 100px;
+             margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="im">
+            <img src="" alt="image" id="imag">
+        </div>
+
+        <div class="but">
+            <button type="button" onclick="setImage('vadapav')">Vadapav</button>
+            <button type="button" onclick="setImage('samosa')">Samosa</button>
+            <button type="button" onclick="setImage('kachori')">Kachori</button>
+        </div>
+    </div>
+
+    <script>
+        function setImage(s){
+            document.getElementById("imag").src="../../../assets/image/"+s+".jpg";
+            console.log(s);
+        }
+
+    </script>
+</body>
+
+</html>

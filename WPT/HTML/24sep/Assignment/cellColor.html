@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Color</title>
+    <style>
+        .table {
+            margin: auto;
+            width: 300px;
+        }
+
+        .in {
+            margin: auto;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        .in1 {
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .num {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        button {
+            background-color: rgb(93, 114, 254);
+            margin: 10px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <div class="row">
+            <div id="1" class="num" style="background-color: white;">1</div>
+            <div id="2" class="num" style="background-color: white;">2</div>
+            <div id="3" class="num" style="background-color: white;">3</div>
+        </div>
+        <div class="row">
+            <div id="4" class="num" style="background-color: white;">4</div>
+            <div id="5" class="num" style="background-color: white;">5</div>
+            <div id="6" class="num" style="background-color: white;">6</div>
+        </div>
+        <div class="row">
+            <div id="7" class="num" style="background-color: white;">7</div>
+            <div id="8" class="num" style="background-color: white;">8</div>
+            <div id="9" class="num" style="background-color: white;">9</div>
+        </div>
+    </div>
+    <form class="in">
+        <label for="cellnum" class="in1">Enter Cell Number:</label>
+        <input type="text" id="cellnum" pattern="[0-9]" class="in1">
+
+        <label for="clr" class="in1">Select color:</label>
+        <input type="color" name="" id="clr" class="in1" >
+        <br>
+        <button type="button" onclick="setColor()">Set background color</button>
+    </form>
+
+    <script>
+        function setColor() {
+            let num = document.getElementById("cellnum").value;
+            let c = document.getElementById("clr").value;
+            console.log(c);
+            parseInt(num);
+            if (num >= 1 && num <= 9) {
+                document.getElementById(num).style = "background-color:" + c;
+            }else{
+                window.alert("Please enter number between 1-9");
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
