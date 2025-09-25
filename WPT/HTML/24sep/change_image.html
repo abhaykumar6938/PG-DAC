@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #im1{
+            height:380px;
+            width:400px;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to magic show</h2>
+    <img src="../../assets/image/amazon.jpg" alt="abhay1" id="im1">
+    <button type="button" onclick="changeImage()">Magic Show</button>
+
+    <script>
+        const images = ["../../assets/image/amazon.jpg", "../../assets/image/flipkart.png","../../assets/image/meesho.png"];
+        let curindex=0;
+        function changeImage(){
+            if(curindex>2){
+                curindex=0;
+            }
+            document.getElementById("im1").src=images[curindex];
+            curindex++;
+            
+        }
+    </script>
+</body>
+</html>
