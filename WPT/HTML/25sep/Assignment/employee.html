@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Assignment</title>
+</head>
+
+<body>
+    <script>
+        let emp = [
+            { id: 101, name: "Amit", post: "Developer", salary: 90000, gender: "male", age: 32, state: "maharashtra", blood_group: "O+" },
+            { id: 102, name: "Sneha", post: "HR", salary: 90000, gender: "female", age: 30, state: "maharashtra", blood_group: "O+" },
+            { id: 103, name: "Rahul", post: "Manager", salary: 100000, gender: "male", age: 56, state: "uttarpradesh", blood_group: "B+" },
+            { id: 104, name: "Manisha", post: "HR", salary: 35000, gender: "female", age: 25, state: "orissa", blood_group: "A-" },
+            { id: 105, name: "Nidhi", post: "Developer", salary: 80000, gender: "female", age: 28, state: "maharashtra", blood_group: "O-" },
+            { id: 106, name: "Aviral", post: "Manager", salary: 45000, gender: "male", age: 22, state: "bihar", blood_group: "AB+" },
+            { id: 107, name: "Priyanshu", post: "Developer", salary: 55000, gender: "Male", age: 80, state: "rajashthan", blood_group: "O+" },
+            { id: 108, name: "Vaishnavi", post: "HR", salary: 36000, gender: "female", age: 65, state: "maharashtra", blood_group: "O+" },
+            { id: 109, name: "Saurabh", post: "Manager", salary: 75000, gender: "male", age: 75, state: "gujrat", blood_group: "O+" },
+            { id: 110, name: "Ashutosh", post: "HR", salary: 55000, gender: "male", age: 45, state: "punjab", blood_group: "O+" }
+        ];
+
+        function display_details(i) {
+            if(i<emp.length){
+                document.write(`Id:${emp[i].id}, Name:${emp[i].name}, Post:${emp[i].post}, Salary:${emp[i].salary}, 
+                Gender: ${emp[i].gender}, Age: ${emp[i].age}, State: ${emp[i].state}, Blood Group: ${emp[i].blood_group}  <br>`);
+            }else{
+                document.write("Employee not exist..");
+            }
+        }
+
+        // display all employee
+        document.writeln("<br>All Employees Details: <br>");
+        for(let i=0; i<emp.length; i++){
+            display_details(i);
+        }
+
+        //display employee whose gender is female
+        document.writeln("<br>Employee Gender is Female: <br>");
+        for(let g in emp){
+            if(emp[g].gender=="female"){
+                display_details(g);
+            }
+        }
+
+         //display employee whose salary is <70000
+        document.writeln("<br>Employee salary is less than 70000 and Greater than 30000: <br>");
+        for(let i in emp){
+            if(emp[i].salary<70000 && emp[i].salary>30000){
+                display_details(i);
+            }
+        }
+
+        //display employee whose position is HR or Manager
+        document.writeln("<br>Employee whose position is HR or Manager<br>");
+        for(let i in emp ){
+            if(emp[i].post=="HR" || emp[i].post=="Manager"){
+                display_details(i);
+            }
+        }
+
+        //employee whose age is greater than 55
+        document.writeln("<br>Employee whose age is greater than 55<br>");
+        for(let i in emp){
+            if(emp[i].age>55){
+                display_details(i);
+            }
+        }
+
+        //employee whose blood group is o+
+        document.writeln("<br>Employee whose blood group is O+<br>");
+        for(let i in emp){
+            if(emp[i].blood_group =="O+"){
+                display_details(i);
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

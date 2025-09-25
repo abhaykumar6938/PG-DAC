@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Month</title>
+</head>
+<body>
+    <h1>Current Month is:</h1>
+    <h2 id="month" style="color: blue;"></h2>
+
+    <script>
+        let month={0:"january", 1:"february", 2:"march", 3:"april", 4:"may", 5:"june", 6:"july", 7:"august", 8:"september",9:"october",10:"november",11:"december"};
+    
+        let m = new Date();
+        let mid=m.getMonth();
+        for(let i in month){
+            if(i==mid){
+                document.getElementById("month").innerHTML=month[i];
+            }
+        }
+    </script>
+</body>
+</html>

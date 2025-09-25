@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation On submit</title>
+</head>
+<body>
+    <form action="" onsubmit="validate()">
+        <label for="email">Enter Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+
+        <label for="pass">Enter Password:</label>
+        <input type="password" id="pass" name="password">
+        <br>
+
+        <label for="contact">Enter Contact:</label>
+        <input type="text" id="contact" name="contact">
+        <br>
+
+        <label>Gender:</label>
+
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validate(){
+            let e=document.getElementById("email").value;
+            let p=document.getElementById("pass").value;
+            let c=document.getElementById("contact").value;
+            let g=document.getElementsByName("gender").value;
+            console.log(e);
+            if(!e.match('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')){
+                window.alert("Enter valid email id");
+            }
+            else if(!p.match("^{5,10}$")){
+                window.alert("Password length should be greater than 6 and less than 10");
+            }
+            else if(!c.match("^[0-9]{10}$")){
+                window.alert("Invaid Contact Number.");
+            }
+            else if(g!="male" || g!="female"){
+                window.alert("Choose gender.");
+            }
+            else{
+                window.alert("Form submitted successfully.");
+            }
+        }
+    </script>
+</body>
+</html>

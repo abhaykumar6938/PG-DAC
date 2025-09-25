@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Blur</title>
+</head>
+<body>
+    <div class="f">
+        <form action="" >
+            <label for="pass">Enter Password:</label>
+            <input type="password" id="pass" placeholder="Enter Password" onblur="checkPass()">
+            <span id="spn"></span>
+            <br>
+        <button type="submit">Submit</button>
+    </div>
+
+    <script>
+        function checkPass(){
+            let p=document.getElementById("pass").value;
+            if(p.trim()===""){
+                document.getElementById("pass").style.border="2px solid red";
+                document.getElementById("spn").innerHTML="Password is required";
+                document.getElementById("spn").style.color="red";
+            }else{
+                if(p.length<5){
+                    document.getElementById("spn").innerHTML="Password length is must greater than 5.";
+                    document.getElementById("spn").style.color="red";
+                }else{
+                    document.getElementById("pass").style.border="2px solid green";
+                    document.getElementById("spn").innerHTML="";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

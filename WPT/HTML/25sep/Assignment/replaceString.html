@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string replace</title>
+    <style>
+        .main {
+            border: 3px solid black;
+            padding: 10px;
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: chartreuse;
+        }
+
+        .input {
+            display: block;
+            align-content: center;
+            margin: 10px;
+            font-size: 13px;
+        }
+
+        .in {
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            /* align-content: center; */
+            display: flex;
+            justify-content: space-between;
+            /* margin: 5px; */
+        }
+
+        .in input {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button button {
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <textarea id="par" name="paragraph" rows="20" cols="40" placeholder="Enter your content here..."></textarea>
+        <div class="op">
+            <div class="input">
+                <div class="labels">
+                    <label for="replace">Write text to Replace</label>
+                    <label for="replace">New text want to insert</label>
+                </div>
+                <div class="in">
+                    <input type="text" name="rep" id="replace">
+                    <input type="text" name="ins" id="insert">
+                </div>
+
+            </div>
+            <div class="button">
+                <button type="button" onclick="replaceSingle1()">Replace Single</button>
+                <button type="button" onclick="replaceAll1()">Replace All</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let p = document.getElementById("par").value;
+        let rep = document.getElementById("replace").value;
+        let inse = document.getElementById("insert").value;
+
+        function replaceSingle1() {
+            let p = document.getElementById("par").value;
+            let rep = document.getElementById("replace").value;
+            let inse = document.getElementById("insert").value;
+            document.getElementById("par").value = p.replace(rep, inse);
+        }
+        function replaceAll1() {
+            let p = document.getElementById("par").value;
+            let rep = document.getElementById("replace").value;
+            let inse = document.getElementById("insert").value;
+            document.getElementById("par").value = p.replaceAll(rep, inse);
+        }
+    </script>
+</body>
+
+</html>
