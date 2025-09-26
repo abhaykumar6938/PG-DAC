@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>window.close() Example</h2>
+
+  <button onclick="openWindow()">Open Window</button>
+  <button onclick="closeWindow()">Close Window</button>
+
+  <script>
+    let myWindow; // Variable to hold the new window reference
+
+    function openWindow() {
+      myWindow = window.open("", "_blank", "width=400,height=200");
+      myWindow.document.write("<p>This is my new window. Click the other button to close me!</p>");
+    }
+
+    function closeWindow() {
+      // Check if the window exists before trying to close it
+      if (myWindow) {
+        myWindow.close();
+      }
+    }
+  </script>
+
+</body>
+</html>

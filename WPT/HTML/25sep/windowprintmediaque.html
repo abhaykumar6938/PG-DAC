@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Printer-Friendly Example</title>
+  <style>
+    /* --- Styles for the screen --- */
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* --- Styles ONLY for printing --- */
+    @media print {
+      body {
+        /* Make text black for printing */
+        color: black; 
+      }
+      button {
+        /* Hide the button when printing */
+        display: none; 
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="">google</a>
+        <a href="">amazon</a>
+        <a href="">flipkart</a>
+    </nav>
+  <h1>Important Report</h1>
+  <p>This is the main content of the page that we want to print.</p>
+  <p>Notice the button below. It will be visible on the screen but will disappear in the print preview.</p>
+
+  <button onclick="window.print()">Print this page</button>
+
+</body>
+</html>
