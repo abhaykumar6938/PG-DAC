@@ -1,0 +1,10 @@
+const mydata=require('./myMath');
+const finnumber=require('./findNumber');
+console.log(mydata.myFullName);
+console.log(mydata.add(2,3));
+console.log(mydata.mul(2,3));
+console.log(mydata.sub(2,3));
+console.log(mydata.pow(2,3));
+console.log("Area of circle: ",mydata.areaOfcircle(1));
+console.log(`Cube of 5 is: `,mydata.cubeOfnumber(5));
+finnumber;
