@@ -1,0 +1,15 @@
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.AssemblyInfoInputs.cache
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.AssemblyInfo.cs
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.csproj.CoreCompileInputs.cache
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.sourcelink.json
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\bin\Debug\net9.0\EmployeeAssignment.exe
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\bin\Debug\net9.0\EmployeeAssignment.deps.json
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\bin\Debug\net9.0\EmployeeAssignment.runtimeconfig.json
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\bin\Debug\net9.0\EmployeeAssignment.dll
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\bin\Debug\net9.0\EmployeeAssignment.pdb
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.dll
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\refint\EmployeeAssignment.dll
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.pdb
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\EmployeeAssignment.genruntimeconfig.cache
+C:\Users\ABHAY\OneDrive\Desktop\DAC\PG-DAC\dotNet\EmployeeAssignment\obj\Debug\net9.0\ref\EmployeeAssignment.dll
